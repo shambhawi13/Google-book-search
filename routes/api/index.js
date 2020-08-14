@@ -2,7 +2,7 @@ const router = require("express").Router();
 const booksController = require("../../controllers/booksController");
 
 // Matches with "/api/books"
-router.route("/")
+router.route("/books")
 
     // Return all saved books as JSON
     .get(booksController.findAll)
@@ -12,7 +12,7 @@ router.route("/")
 
 // Matches with "/api/books/:id"
 router
-    .route("/:id")
+    .route("/books/:id")
     //   .get(booksController.findById)
     //   .put(booksController.update)
 

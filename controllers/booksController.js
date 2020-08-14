@@ -9,6 +9,9 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
+// Right now we don't yet need a find by ID request
+
 //   findById: function(req, res) {
 //     db.Book
 //       .findById(req.params.id)
@@ -21,6 +24,9 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
+// right now we don't need an update request
+
 //   update: function(req, res) {
 //     db.Book
 //       .findOneAndUpdate({ _id: req.params.id }, req.body)
