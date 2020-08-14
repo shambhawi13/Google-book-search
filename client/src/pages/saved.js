@@ -11,7 +11,7 @@ const Styles = {
     // }
 
     removeBook: {
-        backgroundColor:Redirect;
+       
     }
 }
 function Saved() {
