@@ -3,7 +3,10 @@ import { useBookContext } from "../utils/GlobalState";
 
 
 
+
+
 function Home(){
+    const [state, dispatch] = useBooksContext();
     return(
         <div className="container">
       <ul>
@@ -12,7 +15,7 @@ function Home(){
           <li class="collection-header">
             <h4>Results</h4>
           </li>
-            
+
             <li class="collection-item"></li>
           
         </ul>
