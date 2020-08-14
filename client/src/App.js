@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import Jumbotron from "./components/Jumbotron";
-import { BookProvider } from "./util/GlobalState";
+import { BookProvider } from "./utils/GlobalState";
 import { Home } from './pages/home';
 import { Save } from './pages/save';
 import NoMatch from "./pages/NoMatch";
