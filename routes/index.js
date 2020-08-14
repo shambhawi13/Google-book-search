@@ -6,13 +6,13 @@ const apiRoutes = require("./api");
 router.use("/api", apiRoutes);
 
 // API Route to query the Google API
-app.get("/google", (req,res) => {
+router.get("/google", (req,res) => {
   // make an api call to `https://www.googleapis.com/books/v1/volumes?q=<Book Name>` and return the relevant results.
 });
 
 // Send every other request to the React app
 // Define any API routes before this runs
-app.get("*", (req, res) => {
+router.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
