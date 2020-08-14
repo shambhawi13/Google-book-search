@@ -1,5 +1,6 @@
 import React from "react";
 import { useBooksContext } from "../utils/GlobalState";
+import { Redirect } from "react-router-dom";
 
 
 
@@ -8,6 +9,10 @@ const Styles = {
     //     fontWeight: 900,
     //     fontSize: "26px"
     // }
+
+    removeBook: {
+        backgroundColor:Redirect;
+    }
 }
 function Saved() {
     const [state, dispatch] = useBooksContext();
@@ -17,6 +22,9 @@ function Saved() {
                 return (<div>
                     <p>{state.title}</p>
                 <p>{state.description}</p>
+                <div className='removeBookButton'>
+                    Remove Book
+                    </div>
                 </div>)
             })
             }
