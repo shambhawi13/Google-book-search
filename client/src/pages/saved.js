@@ -1,6 +1,7 @@
 import React from "react";
 import { useBooksContext } from "../utils/GlobalState";
-
+import { Redirect } from "react-router-dom";
+import { DELETE_BOOKS } from "../utils/actions";
 
 
 const Styles = {
@@ -8,6 +9,10 @@ const Styles = {
     //     fontWeight: 900,
     //     fontSize: "26px"
     // }
+
+    removeBook: {
+
+    }
 }
 function Saved() {
     const [state, dispatch] = useBooksContext();
@@ -15,22 +20,24 @@ function Saved() {
         <div>
             {state.map(book => {
                 return (<div>
-                    <p>{state.title}</p>
-                <p>{state.description}</p>
+                    <p>{book.title}</p>
+                    <p>{book.description}</p>
+                    <div style={}
+                        onClick={() => {
+                            dispatch({
+                                type: actions.DELETE_BOOKS,
+                                id: book.id
+                            })
+                        }}>
+                        Remove Book
+                    </div>
                 </div>)
             })
             }
-      {/* <div class="nav-wrapper #1976d2 blue darken-2">
-        <a linkto="/" class="left" style={Styles.nav}>Books</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="" >Search</a></li>
-          <li><a href="" >Saved</a></li>
-    
-        </ul>
-      </div> */}
-      </div>
-      );
-    
+       
+        </div>
+    );
+
 }
 
 export default Saved;
