@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Jumbotron />
       <SearchBar />
-      <Footer />
+      <Footer />  
     </div>
   );
 }
