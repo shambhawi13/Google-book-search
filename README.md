@@ -1,29 +1,57 @@
-# Create React Express App
+# projectAct
+Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo data base.
 
-## About This Boilerplate
-
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
-
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
-
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following command:
-
-```
+![screenshot](screenshot)
+# Table of contents
+1. [Installation](#Installation)
+2. [Usage](#Usage)
+3. [Live Demo](#Live_Demo)
+4. [License](#License)
+5. [Features](#Features)
+6. [Technology](#Technology)
+7. [Credits](#Credits)
+8. [Badges](#Badges)
+9. [User Story](#User_Story)
+<a name="Installation"></a>
+## Installation
+```sh
 npm install
 ```
-
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
+<a name="Usage"></a>
+## Usage
+```sh
 npm start
 ```
+<a name="Live_Demo"></a>
+## Live Demo
+live demo url
+<a name='License'></a>
+## License
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+<a name="Features"></a>
+## Features
+1. search for books
+2.  save books
+3.  delete books
+<a name="Technology"></a>
+## Technology
+1. Express
+2.  NodeJS
+3.  GoogleBooksAPI
+<a name="Credits"></a>
+## Credits
+Bart Dority, Daniel Jauregui, Shambhawi Kumari , 
+<a name="Badges"></a>
+## Badges
+ [![Generic badge](https://img.shields.io/badge/made_with-MERN-<COLOR>.svg)](https://shields.io/)
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+**on github:** <a href='github.com/b0rgBart3, Kionling'>b0rgBart3, Kionling</a>
 
-## Deployment (Heroku)
+[![](https://github.com/b0rgBart3, Kionling.png?size=90)](https://github.com/remarkablemark)
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+Email: borgBart3@gmail.com
+<a name="User_Story"></a>
+## User Story
+```sh
+As an avid reader, I want to be able to store my own list of books that are available on Google Books, and then be able to easily access them at a later date.
+```
