@@ -13,13 +13,13 @@ function Home(){
           <SearchBar/>
           <ResultsList />
       {/* <ul>
-        <ul class="collection with-header">
+        <ul className="collection with-header">
             
-          <li class="collection-header">
+          <li className="collection-header">
             <h4>Results</h4>
           </li>
 
-            <li class="collection-item"></li>
+            <li className="collection-item"></li>
           
         </ul>
       </ul> */}

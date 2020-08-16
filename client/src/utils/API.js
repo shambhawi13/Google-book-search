@@ -34,6 +34,6 @@ export default {
   },
 
   googleBooks: function(name) {
-    return axios.get("/google/:name");
+    return axios.get("/google/" + name);
   }
 };

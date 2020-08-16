@@ -24,7 +24,7 @@ function SearchBar() {
     e.preventDefault();
     e.stopPropagation();
   
-    //console.log("Search for: " + searchRef.current.value);
+    console.log("Search for: " + searchRef.current.value);
     API.googleBooks(searchRef.current.value)
     .then(results => {
         dispatch( { type: SEARCH_RESULTS, value: results.data})
@@ -42,16 +42,16 @@ function SearchBar() {
           <h3 className="">Search for a book</h3>
         <nav className="white z-depth-2" style={Styles.search}>
           <div
-            class="nav-wrapper #1976d2 blue darken-2 z-depth-0"
+            className="nav-wrapper #1976d2 blue darken-2 z-depth-0"
             style={Styles.search}
           >
             <form onSubmit={handleOnSubmit}>
-              <div class="input-field z-depth-0" style={Styles.search}>
+              <div className="input-field z-depth-0" style={Styles.search}>
                 <input id="search" type="search" style={Styles.search} ref={searchRef}></input>
-                <label class="label-icon" for="search">
-                  <i class="material-icons">search</i>
+                <label className="label-icon">
+                  <i className="material-icons">search</i>
                 </label>
-                <i class="material-icons">close</i>
+                <i className="material-icons">close</i>
               </div>
             </form>
           </div>

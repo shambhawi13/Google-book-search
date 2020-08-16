@@ -7,35 +7,35 @@ const Styles = {
 
 function Footer() {
   return (
-    <footer class="page-footer #1976d2 blue darken-2" style={Styles.footer}>
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text"> </h5>
-            <p class="grey-text text-lighten-4">
+    <footer className="page-footer #1976d2 blue darken-2" style={Styles.footer}>
+      <div className="container">
+        <div className="row">
+          <div className="col l6 s12">
+            <h5 className="white-text"> </h5>
+            <p className="grey-text text-lighten-4">
               You can use rows and columns here to organize your footer content.
             </p>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
+          <div className="col l4 offset-l2 s12">
+            <h5 className="white-text">Links</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                   Link 1
                 </a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                   Link 2
                 </a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                   Link 3
                 </a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="#!">
+                <a className="grey-text text-lighten-3" href="#!">
                   Link 4
                 </a>
               </li>
@@ -43,10 +43,10 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+      <div className="footer-copyright">
+        <div className="container">
           © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">
+          <a className="grey-text text-lighten-4 right" href="#!">
             More Links
           </a>
         </div>
