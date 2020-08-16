@@ -1,34 +1,35 @@
-import React, { Component, Nav, Switch, Router, Route } from "react";
-import logo from "./logo.svg";
+import React, { Component, Nav } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 import Jumbotron from "./components/Jumbotron";
 import { BookProvider } from "./utils/GlobalState";
 import  Home  from './pages/home';
-import Save  from './pages/saved';
+import Saved  from './pages/saved';
 import NoMatch from "./pages/NoMatch";
+import SearchBar from "./components/searchbar";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Jumbotron />
-      <Router>
-        <div>
-          <BookProvider>
-            <Nav />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/save" component={Save} />
-              <Route component={NoMatch} />
-            </Switch>
-          </BookProvider>
-        </div>
-      </Router>
-      <Footer/>
-    </div>
+    <Router>
+      <div>
+        <BookProvider>
+          <Navbar />
+          <Jumbotron>
+
+          </Jumbotron>
+          <SearchBar/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/saved" component={Saved} />
+            <Route component={NoMatch} />
+          </Switch>
+          <Footer></Footer>
+        </BookProvider>
+      </div>
+    </Router>
   );
 }
 
