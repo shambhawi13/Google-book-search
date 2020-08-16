@@ -12,9 +12,9 @@ function Navbar() {
 
   return (
     <nav>
-  <div class="nav-wrapper #1976d2 blue darken-2">
-    <a linkto="/" class="left" style={Styles.nav}>Books</a>
-    <ul class="right hide-on-med-and-down">
+  <div className="nav-wrapper #1976d2 blue darken-2">
+    <Link to="/" className="left" style={Styles.nav}>Books</Link>
+    <ul className="right hide-on-med-and-down">
 
     {/* to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"} */}
     <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"} >
