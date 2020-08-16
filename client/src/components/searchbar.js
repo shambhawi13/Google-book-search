@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
+import API from "../utils/API";
+import { useBookContext } from "../utils/GlobalState";
+import { SEARCH_RESULTS } from "../utils/actions";
+
 
 const Styles = {
   search: {
@@ -10,7 +14,27 @@ const Styles = {
 
 };
 
+
 function SearchBar() {
+  const [state,dispatch] = useBookContext();
+
+  const searchRef = useRef();
+
+  function handleOnSubmit(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  
+    //console.log("Search for: " + searchRef.current.value);
+    API.googleBooks(searchRef.current.value)
+    .then(results => {
+        dispatch( { type: SEARCH_RESULTS, value: results.data})
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  
+  }
+
   return (
     <div className="container">
       <div className="card #1565c0 blue darken-3">
@@ -21,9 +45,9 @@ function SearchBar() {
             class="nav-wrapper #1976d2 blue darken-2 z-depth-0"
             style={Styles.search}
           >
-            <form>
+            <form onSubmit={handleOnSubmit}>
               <div class="input-field z-depth-0" style={Styles.search}>
-                <input id="search" type="search" style={Styles.search}></input>
+                <input id="search" type="search" style={Styles.search} ref={searchRef}></input>
                 <label class="label-icon" for="search">
                   <i class="material-icons">search</i>
                 </label>
