@@ -1,12 +1,12 @@
 import React from "react"
-import { useBookContext } from "../utils/GlobalState";
+import {useBookContext}  from "../utils/GlobalState";
 
 
 
 
 
 function Home(){
-    const [state, dispatch] = useBooksContext();
+    const [state, dispatch] = useBookContext();
     return(
         <div className="container">
       <ul>

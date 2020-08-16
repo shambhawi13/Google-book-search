@@ -1,5 +1,5 @@
 import React from "react";
-import { useBooksContext } from "../utils/GlobalState";
+import { useBookContext } from "../utils/GlobalState";
 import { Redirect } from "react-router-dom";
 import { DELETE_BOOKS } from "../utils/actions";
 
@@ -15,17 +15,17 @@ const Styles = {
     }
 }
 function Saved() {
-    const [state, dispatch] = useBooksContext();
+    const [state, dispatch] = useBookContext();
     return (
         <div>
             {state.map(book => {
                 return (<div>
                     <p>{book.title}</p>
                     <p>{book.description}</p>
-                    <div style={}
+                    <div 
                         onClick={() => {
                             dispatch({
-                                type: actions.DELETE_BOOKS,
+                                type: DELETE_BOOKS,
                                 id: book.id
                             })
                         }}>
