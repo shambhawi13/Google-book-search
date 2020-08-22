@@ -52,7 +52,7 @@ state.searchResults.map( (book,index) =>
 
  <li key={book.id}>
    <div className="collection-item" style={Styles.collection}>
-   <h5>
+   <h5 style={Styles.text}>
    { book.volumeInfo.title }</h5>
    <p>{
      

@@ -9,7 +9,20 @@ const Styles = {
     borderRadius: "90px",
   },
   text:{ 
-      fontWeight: 900
+      fontWeight: 900,
+   
+
+    },
+    list: {
+      fontSize: "20px",
+      fontWeight: "900",
+      textShadow: "2px 2px 5px black"
+    },
+    li: {
+      marginBottom: "20px",
+      color: "white",
+      textShadow: "2px 2px 5px black"
+
     }
 
 };
@@ -56,6 +69,17 @@ function SearchBar() {
             </form>
           </div>
         </nav>
+      </div>
+      <div>
+        <h3 style={Styles.li} className="white-text">Creators:</h3>
+        <ul style={Styles.list}>
+          <li style={Styles.li}>Shambhawi (Back-end Developer</li>
+          <li style={Styles.li}>Bart (Back-end Developer)</li>
+          <li style={Styles.li}>Daniel (Front-end Developer)</li>
+
+
+          
+        </ul>
       </div>
     </div>
   );
