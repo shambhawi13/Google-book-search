@@ -36,13 +36,13 @@ function SearchBar() {
   }
 
   return (
-    <div className="container">
-      <div className="card #1565c0 blue darken-3">
+    <div className="container center">
+      <div className=" transparent container center  z-depth-0" >
 
-          <h3 className="">Search for a book</h3>
-        <nav className="white z-depth-2" style={Styles.search}>
+          <h3 className="white-text " style={Styles.text}>Search for a book</h3>
+        <nav className="white z-depth-2 container center" style={Styles.search}>
           <div
-            className="nav-wrapper #1976d2 blue darken-2 z-depth-0"
+            className="nav-wrapper #f8bbd0 pink lighten-4"
             style={Styles.search}
           >
             <form onSubmit={handleOnSubmit}>

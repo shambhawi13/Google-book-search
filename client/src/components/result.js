@@ -4,7 +4,19 @@ import { STATES } from "mongoose";
 import { SAVE_BOOK } from "../utils/actions";
 import API from "../utils/API";
 
+const Styles = {
+  search: {
+    borderRadius: "90px",
+  },
+  text:{ 
+      fontWeight: 900
+    },
+    collection: {
+      borderStyle: "none",
+      marginBottom: "20px"
+    }
 
+};
 function ResultsList() {
   const [state, dispatch]= useBookContext();
 
@@ -27,8 +39,8 @@ function ResultsList() {
 
   return (
     <div className="container">
-      <ul>
-      <h4>Results</h4>
+    
+      <h4 className="white-text" style={Styles.text}>Results:</h4>
         <ul className="collection with-header">
             
               
@@ -39,34 +51,38 @@ function ResultsList() {
 state.searchResults.map( (book,index) => 
 
  <li key={book.id}>
-   <div className="collection-item">
-   <h2>
-   { book.volumeInfo.title }</h2>
+   <div className="collection-item" style={Styles.collection}>
+   <h5>
+   { book.volumeInfo.title }</h5>
+   <p>{
+     
+     book.volumeInfo.imageLinks ?
+     <img src={book.volumeInfo.imageLinks.thumbnail} />
+     : "noimage"
+     
+     }</p>
+  
    <p>
    { book.volumeInfo.description }</p>
 
-   <p>{
-     
-      book.volumeInfo.imageLinks ?
-      <img src={book.volumeInfo.imageLinks.thumbnail} />
-      : "noimage"
-      
-      }</p>
+   
 
 
-      <button onClick={()=>saveBook(book.volumeInfo)} > Save </button>
+      <button className="btn #f8bbd0 pink lighten-4" onClick={()=>saveBook(book.volumeInfo)} > Save </button>
 
   </div>
+  
  </li>
+ 
 
 )
-: <li></li>
+: <br></br>
         
 }
           
           
         </ul>
-      </ul>
+      
     </div>
   );
 }
