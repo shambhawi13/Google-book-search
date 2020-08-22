@@ -59,11 +59,14 @@ function Saved() {
                 )}
                 <h5>Description:</h5>
                 <p>{book.description}</p>
+                
               </div>
             );
           })
         ) : (
-          <div></div>
+          <div>
+              <h1>No results!</h1>
+          </div>
         )}
       </div>
     </div>
