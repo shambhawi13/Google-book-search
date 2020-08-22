@@ -1,17 +1,23 @@
-import React from "react"
-import {useBookContext}  from "../utils/GlobalState";
+import React from "react";
+import { useBookContext } from "../utils/GlobalState";
 import SearchBar from "../components/searchbar";
 import ResultsList from "../components/result";
 import Jumbotron from "../components/Jumbotron";
 
-
-function Home(){
-    const [state, dispatch] = useBookContext();
-    return(
-        <div className="container">
+function Home() {
+  const [state, dispatch] = useBookContext();
+  return (
+    <div className="">
+      <div className="row">
+        <div className="col s12 l5">
           <Jumbotron />
-          <SearchBar/>
-          <ResultsList />
+        </div>
+        <div className="col l7">
+          <SearchBar />
+        </div>
+      </div>
+
+      <ResultsList />
       {/* <ul>
         <ul className="collection with-header">
             
@@ -24,6 +30,6 @@ function Home(){
         </ul>
       </ul> */}
     </div>
-    )
+  );
 }
-export default Home
+export default Home;

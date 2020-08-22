@@ -9,7 +9,20 @@ const Styles = {
     borderRadius: "90px",
   },
   text:{ 
-      fontWeight: 900
+      fontWeight: 900,
+   
+
+    },
+    list: {
+      fontSize: "20px",
+      fontWeight: "900",
+      textShadow: "2px 2px 5px black"
+    },
+    li: {
+      marginBottom: "20px",
+      color: "white",
+      textShadow: "2px 2px 5px black"
+
     }
 
 };
@@ -36,13 +49,13 @@ function SearchBar() {
   }
 
   return (
-    <div className="container">
-      <div className="card #1565c0 blue darken-3">
+    <div className="container center">
+      <div className=" transparent container center  z-depth-0" >
 
-          <h3 className="">Search for a book</h3>
-        <nav className="white z-depth-2" style={Styles.search}>
+          <h3 className="white-text " style={Styles.text}>Search for a book</h3>
+        <nav className="white z-depth-2 container center" style={Styles.search}>
           <div
-            className="nav-wrapper #1976d2 blue darken-2 z-depth-0"
+            className="nav-wrapper #f8bbd0 pink lighten-4"
             style={Styles.search}
           >
             <form onSubmit={handleOnSubmit}>
@@ -56,6 +69,17 @@ function SearchBar() {
             </form>
           </div>
         </nav>
+      </div>
+      <div>
+        <h3 style={Styles.li} className="white-text">Creators:</h3>
+        <ul style={Styles.list}>
+          <li style={Styles.li}>Shambhawi (Back-end Developer</li>
+          <li style={Styles.li}>Bart (Back-end Developer)</li>
+          <li style={Styles.li}>Daniel (Front-end Developer)</li>
+
+
+          
+        </ul>
       </div>
     </div>
   );

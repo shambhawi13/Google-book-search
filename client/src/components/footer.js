@@ -1,42 +1,37 @@
 import React from "react";
 const Styles = {
   footer: {
-    marginTop: "800px",
+    marginTop: "400px",
   },
 };
 
 function Footer() {
   return (
-    <footer className="page-footer #1976d2 blue darken-2" style={Styles.footer}>
+    <footer className="page-footer#f8bbd0 pink lighten-4" style={Styles.footer}>
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
-            <h5 className="white-text"> </h5>
+            <h5 className="white-text">React Reading List</h5>
             <p className="grey-text text-lighten-4">
-              You can use rows and columns here to organize your footer content.
+              A simple reading list using Google's books API.
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
-            <h5 className="white-text">Links</h5>
+            <h5 className="white-text">Github links to the creators</h5>
             <ul>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Link 1
+                <a className="grey-text text-lighten-3" href="https://github.com/shambhawi13">
+                  Shambhawi
                 </a>
               </li>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Link 2
+                <a className="grey-text text-lighten-3" href="https://github.com/b0rgbart3">
+                  Bart
                 </a>
               </li>
               <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Link 3
-                </a>
-              </li>
-              <li>
-                <a className="grey-text text-lighten-3" href="#!">
-                  Link 4
+                <a className="grey-text text-lighten-3" href="https://github.com/Kionling">
+                  Daniel
                 </a>
               </li>
             </ul>
@@ -45,10 +40,7 @@ function Footer() {
       </div>
       <div className="footer-copyright">
         <div className="container">
-          © 2014 Copyright Text
-          <a className="grey-text text-lighten-4 right" href="#!">
-            More Links
-          </a>
+          © 2020 The Migos
         </div>
       </div>
     </footer>
