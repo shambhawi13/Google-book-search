@@ -1,7 +1,7 @@
 # projectAct
-Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo data base.
+Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo database. This application is built using react, mongodb, mongoose, node.
 
-![screenshot](screenshot)
+![screenshot](./google-books.gif)
 # Table of contents
 1. [Installation](#Installation)
 2. [Usage](#Usage)
@@ -11,7 +11,6 @@ Full Stack MERN application to search for books from the Google Book API, and st
 6. [Technology](#Technology)
 7. [Credits](#Credits)
 8. [Badges](#Badges)
-9. [User Story](#User_Story)
 <a name="Installation"></a>
 ## Installation
 ```sh
@@ -45,13 +44,6 @@ Bart Dority, Daniel Jauregui, Shambhawi Kumari ,
 ## Badges
  [![Generic badge](https://img.shields.io/badge/made_with-MERN-<COLOR>.svg)](https://shields.io/)
 
-**on github:** <a href='github.com/b0rgBart3, Kionling'>b0rgBart3, Kionling</a>
+**on github:** <a href='github.com/b0rgBart3, Kionling, shambhawi13'>b0rgBart3, Kionling, shambhawi13</a>
 
-[![](https://github.com/b0rgBart3, Kionling.png?size=90)](https://github.com/remarkablemark)
 
-Email: borgBart3@gmail.com
-<a name="User_Story"></a>
-## User Story
-```sh
-As an avid reader, I want to be able to store my own list of books that are available on Google Books, and then be able to easily access them at a later date.
-```
